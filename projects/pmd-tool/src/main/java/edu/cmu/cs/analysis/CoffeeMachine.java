@@ -53,6 +53,9 @@ public class CoffeeMachine {
             case "3":
                 buyCappuccino();
                 break;
+            default: 
+                // Fix for SwitchStmtsShouldHaveDefault rule
+                // Does nothing
         }
     }
     public static void buyEspresso() {
@@ -68,7 +71,8 @@ public class CoffeeMachine {
     }
 
     public static void buyLatte() {
-        if (!(!(disposableCups < 1)) || hasWater < 200 || coffeeBeansHas < 12) {
+        //Fix for AvoidMultipleUnaryOperators
+        if ((disposableCups < 1) || hasWater < 200 || coffeeBeansHas < 12) {
             System.out.println("Sorry, not enough water!");
             return;
         } else if (hasMilk < 100) {

@@ -11,9 +11,20 @@
 
 
     <!-- Your rules will come here -->
-    <rule ref="category/java/errorprone.xml/AvoidMultipleUnaryOperators" />
+    <!-- This has been fixed -->
+    <rule ref="category/java/errorprone.xml/AvoidMultipleUnaryOperators" /> 
+    
     <rule ref="category/java/errorprone.xml/IdempotentOperations" />
     <rule ref="category/java/design.xml/CollapsibleIfStatements" />
+
+    <!-- Extra Rule 1 -->
+    <!-- This has been fixed -->
+    <rule ref="category/java/bestpractices.xml/SwitchStmtsShouldHaveDefault" />
+    <!-- Extra Rule 2 -->
+    <rule ref="category/java/codestyle.xml/LinguisticNaming" />
+    <!-- Extra Rule 3 -->
+    <rule ref="category/java/errorprone.xml/AvoidLiteralsInIfCondition" />
+
 
 
 
